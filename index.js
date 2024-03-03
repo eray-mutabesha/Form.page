@@ -1,19 +1,17 @@
-const input_name=document.getElementById("name")
-const input_mail=document.getElementById("mail")
-const input_password=document.getElementById("motDePass")
-const input_confirm=document.getElementById("confirm")
-const submit=document.querySelector("button")
+const input_name=document.getElementById("name");
+const input_mail=document.getElementById("mail");
+const input_password=document.getElementById("motDePass");
+const input_confirm=document.getElementById("confirm");
+const submit=document.querySelector("button");
 
 let userName=""
 input_name.addEventListener("input",(e)=>{
     userName =e.target.value
 })
-
 let adressMail=""
 input_mail.addEventListener("input",(e)=>{
     adressMail=e.target.value
 })
-
 let password=""
 input_password.addEventListener("input",(e)=>{
     password=e.target.value
@@ -32,7 +30,6 @@ function motdepassvalide(){
             break;
         }
     }
-    
     if (!containsNumber) {
         alert("Le mot de passe doit contenir au moins un chiffre.");
     } 
